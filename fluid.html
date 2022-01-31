@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+  integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+
+<script src="semantic/semantic.min.js"></script>
+
+<noscript>
+  <style>
+    .dropdown:hover>.menu {
+      display: block;
+    }
+
+    .ui.secondary.menu .dropdown.item>.menu {
+      margin-top: 0;
+    }
+  </style>
+</noscript>
+<script src="semantic/semantic.min.js"></script>
+
+<link rel="stylesheet" href="css/above_the_fold_tmp.css">
+<script type="text/javascript" src="js/dat.gui.min.js"></script>
+<script>
+  $(document).ready(() => {
+    $(".touch-to-scroll .button").click(function () {
+      $('html,body').animate({
+        scrollTop: $("#get-started").offset().top
+      },
+        'slow');
+    });
+  })
+</script>
+</head>
+
+<body>
+
+
+    <div class="background-effect-container">
+      <canvas id="animation_bg"></canvas>
+    </div>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
