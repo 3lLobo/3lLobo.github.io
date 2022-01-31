@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head data-suburl="">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="referrer" content="no-referrer" />
+    <meta name="_csrf" content="VwB0cSV1HK_yis2MvZ0o7DsQ28A6MTY0MzU1Njk4MDgwNDE0NjE3NQ" />
+    <meta name="_suburl" content="" />
+
+    <meta name="_bareRepo" content="" />
+    <meta name="_demoRepoURL" content="/nirbarazida/Pneumonia-Classification" />
+
+
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PGHTMDN');
+    </script>
+
+
+
+
+
+
+
+    <title>Open Source Data Science Collaboration - DagsHub</title>
+    <meta name="description" content="DAGsHub is where people create data science projects. Use DAGsHub to discover, reproduce and contribute to your favorite data science projects." />
+
+
+    <meta property="og:url" content="https://dagshub.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DAGsHub">
+    <meta property="og:title" content="The home for data science collaboration">
+    <meta property="og:description" content="DAGsHub is where people create data science projects. Use DAGsHub to discover, reproduce and contribute to your favorite data science projects.">
+    <meta property="og:image" content="https://dagshub.com/img/open_graph/dagshub-logo.png" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image" content="https://dagshub.com/img/open_graph/dagshub-mark.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="620">
+    <meta property="og:image" content="https://dagshub.com/img/open_graph/dagshub-dags.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="620">
+
+    <meta property="twitter:site" content="@TheRealDAGsHub">
+    <meta property="twitter:creator" content="@TheRealDAGsHub">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="DAGsHub">
+    <meta property="twitter:description" content="DAGsHub is where people create data science projects. Use DAGsHub to discover, reproduce and contribute to your favorite data science projects.">
+    <meta property="twitter:image:src" content="https://dagshub.com/img/open_graph/dagshub-logo.png">
+    <meta property="twitter:image:width" content="1200">
+    <meta property="twitter:image:height" content="1200">
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "DAGsHub",
+            "url": "https://dagshub.com/",
+            "sameAs": [
+                "https://www.facebook.com/DAGsHub/",
+                "https://twitter.com/TheRealDAGsHub/",
+                "https://linkedin.com/company/dagshub/"
+            ],
+            "potentialAction": {
+                "@type": "SearchAction",
+                "description": "Search for data science projects on DAGsHub.",
+                "target": "https://dagshub.com/explore/repos?q={search_term}",
+                "query-input": "required name=search_term"
+            }
+        }
+    </script>
+
+
+
+
+    <link rel="shortcut icon" href="/img/favicon.png" />
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/libs/jquery.are-you-sure.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/shepherd.js@5.0.1/dist/js/shepherd.min.js" integrity="sha256-f0JCIzCXnjrT/MjpxcmNjDQNqO7mUR2Pn8+5mC0zfeE=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css" integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+    <link rel="stylesheet" href="/assets/octicons-4.3.0/octicons.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="preload" href="/css/themes/default/assets/fonts/brand-icons.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/css/themes/default/assets/fonts/icons.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fontawesome-5.15.3/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
+
+
+    <link rel="stylesheet" href="/css/semantic-2.4.2.min.css">
+
+
+    <link rel="stylesheet" href="/css/dagshub.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+    <link rel="stylesheet" href="/css/dagshub_theme_override.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+
+    <link rel="stylesheet" href="/css/gogs.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Lato:300,400,700,900|Jaldi|Open+Sans&display=swap" rel="stylesheet">
+
+    <noscript>
+    <style>
+      .dropdown:hover>.menu {
+        display: block;
+      }
+
+      .ui.secondary.menu .dropdown.item>.menu {
+        margin-top: 0;
+      }
+    </style>
+  </noscript>
+    <script src="/js/semantic-2.4.2.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="/css/responsive_page.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+
+
+    <meta name="theme-color" content="#103037">
+
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGHTMDN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+
+
+
+    <div class="ui tiny modal" id="contact-modal">
+        <i class="close icon"></i>
+        <div class="header">
+            Contact us
+        </div>
+        <form id="contact-form" class="ui form content" action="contact_form" method="post">
+            <input type="hidden" name="_csrf" value="VwB0cSV1HK_yis2MvZ0o7DsQ28A6MTY0MzU1Njk4MDgwNDE0NjE3NQ">
+            <div class="required field">
+                <label for="user_name">Your email address</label>
+                <input name="email" type="email" value="" placeholder="tony@stark-industries.com" required>
+            </div>
+            <div class="required field">
+                <label for="subject">Subject</label>
+                <input name="subject" value="Hi DAGsHub, let's talk" placeholder="What would you like to talk about?" required>
+            </div>
+            <div class="required field">
+                <textarea class="autosize" name="body" rows="7"></textarea>
+            </div>
+
+            <script type="text/javascript">
+                var myRecaptchaListeners = {
+                    callAllListeners: function(listeners) {
+                        return () => listeners.forEach((f) => f());
+                    },
+                    successListeners: [],
+                    expireListeners: [],
+                };
+                contactFormCaptchaCallback = myRecaptchaListeners.callAllListeners(myRecaptchaListeners.successListeners);
+                contactFormCaptchaExpired = myRecaptchaListeners.callAllListeners(myRecaptchaListeners.expireListeners);
+            </script>
+            <div class="g-recaptcha field" data-sitekey="6Lf0Z7gUAAAAAKCsW1V-PqN58BcBNAUxe-oIU3nw" data-callback="contactFormCaptchaCallback" data-expired-callback="contactFormCaptchaExpired"></div>
+
+            <input type="hidden" name="page" />
+            <input type="hidden" name="referring_page" />
+            <input type="hidden" name="referrer" />
+            <button class="ui positive center aligned labeled icon button" id="send-contact-request-btn">
+        Send
+        <i class="checkmark icon"></i>
+      </button>
+
+            <script type="text/javascript">
+                (function() {
+                    const submitBtn = document.getElementById('send-contact-request-btn');
+                    onExpire = () => submitBtn.style.display = 'none';
+                    onExpire();
+                    myRecaptchaListeners.successListeners.push(() => {
+                        submitBtn.style.display = 'block';
+                    });
+                    myRecaptchaListeners.expireListeners.push(onExpire);
+                })();
+            </script>
+
+            <div class="ui hidden dimmer inverted">
+                <div class="ui loader"></div>
+                <div class="ui hidden positive message">
+                    <p>Thank you! We'll be in touch ASAP.</p>
+                </div>
+                <div class="ui hidden negative message">
+                    <p>Something went wrong, please try again or contact us directly at <a href="mailto:contact@dagshub.com">contact@dagshub.com</a></p>
+                </div>
+            </div>
+        </form>
+        <script>
+            (function() {
+                const $contactModal = $('#contact-modal');
+                const $contactForm = $('#contact-form');
+                const $dimmer = $contactForm.find('.dimmer');
+                const $loader = $dimmer.find('.loader');
+                const $okMsg = $dimmer.find('.positive');
+                const $errorMsg = $dimmer.find('.negative');
+
+                $contactForm.find('input[name=page]').val(document.URL);
+                $contactForm.find('input[name=referring_page]').val(new URL(document.URL).searchParams.get('referring_page'));
+                $contactForm.find('input[name=referrer]').val(document.referrer);
+
+
+                $contactModal.modal({
+                    onShow: () => {
+                        $dimmer.dimmer('hide');
+                        $loader.transition('fade in', 0);
+                        $okMsg.transition('fade out', 0);
+                        $errorMsg.transition('fade out', 0);
+                    }
+                });
+
+                $contactForm.submit((e) => {
+                    e.preventDefault();
+
+                    $dimmer.dimmer('show');
+
+                    function hideModal() {
+                        setTimeout(() => {
+                            $contactModal.modal('hide');
+                        }, 3000);
+                    }
+
+
+                    const loaderToMessage = function(targetMsg = $okMsg, afterMsg = hideModal) {
+                        $loader.transition('fade out');
+                        targetMsg.transition('fade in');
+                        if (afterMsg) afterMsg();
+                    };
+
+                    $.ajax({
+                        url: $contactForm.attr('action'),
+                        method: 'post',
+                        data: $contactForm.serialize(),
+                        success: () => loaderToMessage(),
+                        error: e => {
+                            console.error(e);
+
+                            loaderToMessage($errorMsg, null);
+                        }
+                    });
+
+
+
+
+                });
+            })();
+        </script>
+        <div class="ui secondary segment">
+            Or if you want, you can join our community at <a href="https://discord.com/invite/9gU36Y6" class="ui basic discord icon"><i class="discord grey icon big"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="ui right vertical inverted sidebar menu">
+        <div class="search item">
+            <form class="ui form home_search" action="/explore/repos">
+                <div class="ui icon fluid small input">
+                    <input name="q" value="" placeholder="Search public projects...">
+
+                    <button class="search-button-wrapper ui tiny icon button">
+            <i class="search icon"></i>
+          </button>
+                </div>
+            </form>
+        </div>
+
+        <a class="item active" href="/">Home</a>
+
+        <a class="item" href="/explore/repos">Explore</a>
+
+        <div class="item">
+            Resources &nbsp;<i class="fas fa-angle-down"></i>
+            <div class="menu">
+                <a class="item" href="/docs">Docs</a>
+                <a class="item" href="/docs/faq">FAQ</a>
+                <a class="item" href="/blog">Blog</a>
+            </div>
+        </div>
+        <div class="item">
+            Company &nbsp;<i class="fas fa-angle-down"></i>
+            <div class="menu">
+                <a class="item" href="/about">Our Story</a>
+                <a class="item" href="/careers">Careers</a>
+            </div>
+        </div>
+        <div class="item"></div>
+        <a class="item" href="https://discord.com/invite/9gU36Y6">
+            <i class="discord icon "></i> Join our channel
+        </a>
+
+        <div class="item"></div>
+
+        <a class="bottom-menu item" href="/user/sign_up?redirect_to=
+
+">
+            <i class="sign-up-icon fas fa-user-plus"></i> Register
+        </a>
+
+        <a class="bottom-menu item" href="/user/login?redirect_to=
+
+">
+            <i class="sign-in-icon fas fa-sign-in-alt"></i> Sign In
+        </a>
+
+    </div>
+    <script>
+        $(document)
+            .ready(function() {
+
+                $('.ui.sidebar').sidebar('attach events', '.toc.item');
+            });
+    </script>
+    <div class="ui full height">
+        <noscript>This website works better with JavaScript</noscript>
+
+
+        <div class="no-bg-nav following bar light">
+            <div id="menu-container" class="ui fluid container">
+                <div class="left-menu">
+                    <a class="item brand" href="">
+                        <img width="176" height="50" alt="DAGsHub navbar logo" class="ui image" src="/img/favicon-detail.svg">
+                    </a>
+                    <div class="ui top inverted secondary menu">
+                        <a class="left-menu item" href="/explore/repos">Explore</a>
+
+                        <div class="ui nav-dropdown dropdown item ">
+                            Resources &nbsp;<i class="fas fa-angle-down"></i>
+                            <div class="menu">
+                                <a class="left-menu item" href="/docs">Docs</a>
+                                <a class="left-menu item" href="/docs/faq">FAQ</a>
+                                <a class="left-menu item" href="/blog">Blog</a>
+                            </div>
+                        </div>
+
+                        <div class="ui nav-dropdown dropdown item ">
+                            Company &nbsp;<i class="fas fa-angle-down"></i>
+                            <div class="menu">
+                                <a class="left-menu item" href="/about">Our Story</a>
+                                <a class="left-menu item" href="/careers">Careers</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ui top inverted secondary menu">
+                    <div class="menu">
+                        <a aria-label="join our discord" class="right-menu item ui basic inverted circular discord icon" href="https://discord.com/invite/9gU36Y6">
+                            <i class="discord big icon"></i>
+                        </a>
+                        <div class="right-menu search item">
+                            <form class="ui form home_search" action="/explore/repos">
+                                <div class="ui icon small input">
+                                    <input name="q" value="" aria-label="Search public projects" placeholder="Search public repositories...">
+
+                                    <button class="search-button-wrapper ui tiny icon button" aria-label="Public projects search button">
+                    <i class="search icon"></i>
+                  </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="right-menu head link jump item poping up help help-icon">
+                            <i class="fas fa-question-circle large icon" id="help"></i>
+                            <div class="ui fluid popup bottom left transition hidden" data-variation="very wide" style="inset: 554px auto auto 1px; width: 960px !important;">
+                                <div class="ui one column divided grid">
+                                    <div class="column">
+                                        <h4 class="ui header">Hi, welcome to DAGsHub!</h4>
+                                        <span>We gathered a few resources that will help you get started with DAGsHub fast.</span>
+                                        <h5 class="ui header">Get Started</h5>
+                                        <div class="ui small link list">
+                                            <a class="item" id="walkthrough-trigger" href="/nirbarazida/Pneumonia-Classification?force_walkthrough=true">
+                                                <i class="play circle outline icon"></i>Interactive walkthrough</a>
+                                            <a class="item" id="quickstart-trigger">
+                                                <i class="play circle outline icon"></i>Watch the quickstart video</a>
+                                            <a class="item" href="/docs/getting-started/overview">
+                                                <i class="file outline code icon"></i>Create a "Hello World" project</a>
+                                            <a class="item" href="https://colab.research.google.com/drive/1JJIwAH0TBSY49um5s2FD0GEA6bw3SKrd?usp=sharing">
+                                                <i class="file alternate outline icon"></i>Try our example notebook</a>
+                                        </div>
+                                        <h4>DAGsHub Documentation <a href="/docs/"><i class="fas fa-external-link-alt"></i></a></h4>
+                                        <div class="ui small link list">
+                                            <a class="item" href="/docs/faq">
+                                                <i class="fas fa-question"></i> Check our FAQ
+                                            </a>
+                                        </div>
+                                        <h5 class="ui header">Data & model storage</h5>
+                                        <div class="ui small link list">
+                                            <a class="item" href="/docs/reference/dagshub_storage/">
+                                                <i class="file alternate outline icon"></i>Learn about DAGsHub storage</a>
+                                            <a class="item" href="/docs/integration-guide/set-up-remote-storage-for-data-and-models/">
+                                                <i class="file alternate outline icon"></i>Connect your existing remote cloud storage (S3, GS, etc.)
+                                            </a>
+                                        </div>
+                                        <h5 class="ui header">Track experiments</h5>
+                                        <div class="ui small link list">
+                                            <a class="item" href="/docs/reference/discovering_experiments/">
+                                                <i class="file alternate outline icon"></i>Learn about the experiments tab</a>
+                                            <a class="item" href="/docs/reference/git-tracking/">
+                                                <i class="file alternate outline icon"></i>Track experiments with Git</a>
+                                            <a class="item" href="/docs/reference/mlflow_tracking/">
+                                                <i class="file alternate outline icon"></i>Track experiments with MLflow</a>
+                                        </div>
+                                        <h5 class="ui header">Keep in touch</h5>
+                                        <div class="ui small link list">
+                                            <a class="item" href="https://discord.com/invite/9gU36Y6">
+                                                <i class="discord icon "></i> Join the community
+                                            </a>
+                                            <a class="item" href="/blog">
+                                                <i class="file alternate outline icon"></i>DAGsHub blog</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="right-menu head link item button">
+                            <a id="sign-up-navbar" class="ui very compact green button" href="/user/sign_up?redirect_to=
+
+">
+                                <i class="sign-up-icon fas fa-user-plus"></i> Sign Up
+                            </a>
+                        </div>
+
+                        <a id="sign-in-navbar" class="right-menu item" href="/user/login?redirect_to=
+
+">
+                            <i class="sign-in-icon fas fa-sign-in-alt"></i> Sign In
+                        </a>
+
+
+                        <a class="toc item"><i class="sidebar icon"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="quickstart-modal" class="ui basic modal video-modal">
+            <i class="close icon"></i>
+            <div class="image content">
+                <div class="ui center aligned fluid container">
+                    <style>
+                        .embed-container {
+                            position: relative;
+                            padding-bottom: 56.25%;
+                            height: 0;
+                            overflow: hidden;
+                            max-width: 100%;
+                        }
+                        
+                        .embed-container iframe,
+                        .embed-container object,
+                        .embed-container embed {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    </style>
+                    <div class='embed-container'>
+                        <iframe src='https://www.youtube.com/embed/lrzdqEwzoo8?version=3&enablejsapi=1' id="quickstart-dagshub-video" width="1920" height="1080" frameborder='0' allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(() => {
+                $('#quickstart-modal').modal({
+                    onHide: function() {
+                        const videoIframe = $('#quickstart-dagshub-video')[0];
+                        if (videoIframe) {
+                            videoIframe.contentWindow.postMessage(
+                                '{"event":"command","func":"stopVideo","args":""}', '*'
+                            );
+                        }
+                        return true;
+                    }
+                }).modal('attach events', '#quickstart-trigger', 'show');
+            });
+        </script>
+
+
+
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+        <div class="home content">
+            <link rel="stylesheet" href="/css/home/above_the_fold_tmp.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+            <script type="text/javascript" src="/js/home_tmp/dat.gui.min.js"></script>
+            <script>
+                $(document).ready(() => {
+                    $(".touch-to-scroll .button").click(function() {
+                        $('html,body').animate({
+                                scrollTop: $("#get-started").offset().top
+                            },
+                            'slow');
+                    });
+                })
+            </script>
+            <div id="above-the-fold" class="ui vertical middle aligned above-the-fold homepagehero">
+                <div class="background-effect-container">
+                    <canvas id="animation_bg"></canvas>
+                </div>
+                <div class="ui text container center aligned middle aligned padded-masthead">
+                    <div class="ui two column stackable vertically very relaxed grid">
+                        <div id="homepagehero_container" class="ui sixteen wide middle aligned column">
+                            <div class="homepagehero_content">
+                                <h1 class="ui header homepage_title">
+                                    Where people build data science projects
+                                </h1>
+                                <p class="homepage_copy">
+                                    Leverage popular open source tools to version datasets & models, track experiments, label data, and visualize results.
+                                </p>
+                                <div class="home-signup">
+                                    <a class="ui huge green button" href="/user/sign_up">START NOW &nbsp;&nbsp;<i
+                      class="fas fa-arrow-right"></i></a>
+                                </div>
+                                <p class="subtitle-2">
+                                    DagsHub is free. Get started in seconds.
+                                </p>
+                            </div>
+                            <div class="touch-to-scroll">
+                                <div class="ui basic small compact grey button">
+                                    Click to scroll
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="/js/home_tmp/script.js"></script>
+
+            <link rel="stylesheet" href="/css/home/get_started.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+            <div id="get-started" class="ui container">
+                <div class="ui center aligned basic segment">
+                    <div id="video-modal-trigger">
+                        <img alt="DAGsHub quickstart video" src="/img/get_started/video-img.svg">
+                        <img class="play_button" src="/img/get_started/play-button.svg" alt="play button" />
+                    </div>
+                </div>
+            </div>
+            <div id="get-started-modal" class="ui basic modal video-modal">
+                <i class="close icon"></i>
+                <div class="image content">
+                    <div class="ui center aligned fluid container">
+                        <style>
+                            .embed-container {
+                                position: relative;
+                                padding-bottom: 56.25%;
+                                height: 0;
+                                overflow: hidden;
+                                max-width: 100%;
+                            }
+                            
+                            .embed-container iframe,
+                            .embed-container object,
+                            .embed-container embed {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        </style>
+                        <div class='embed-container'>
+                            <iframe src='https://www.youtube.com/embed/K3r9AXddrRU?version=3&enablejsapi=1' id="get-started-dagshub-video" width="1920" height="1080" frameborder='0' allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(() => {
+                    $('#get-started-modal').modal({
+                        onHide: function() {
+                            const videoIframe = $('#get-started-dagshub-video')[0];
+                            if (videoIframe) {
+                                videoIframe.contentWindow.postMessage(
+                                    '{"event":"command","func":"stopVideo","args":""}', '*'
+                                );
+                            }
+                            return true;
+                        }
+                    }).modal('attach events', '#get-started #video-modal-trigger', 'show');
+                });
+            </script>
+
+            <link rel="stylesheet" href="/css/home/proof.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+            <div id="proof-segment" class="ui basic vertical middle aligned segment">
+                <div class="ui center aligned container">
+                    <p class="large text">Over 5000 data scientists and 200 organizations use DagsHub</p>
+                    <div id="user-logos" class="ui center aligned relaxed equal width grid">
+                        <div class="row">
+                            <div class="two wide computer four wide tablet column middle aligned">
+                                <div>
+                                    <img width="100" height="32" alt="university logo" src="/img/logos/proof/uni1.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet column middle aligned">
+                                <div>
+                                    <img width="100" height="40" alt="company logo" src="/img/logos/proof/company1.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet column middle aligned">
+                                <div>
+                                    <img width="67" height="36" alt="university logo" src="/img/logos/proof/uni2.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet column middle aligned">
+                                <div>
+                                    <img width="100" height="40" alt="company logo" src="/img/logos/proof/company2.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet column middle aligned">
+                                <div>
+                                    <img width="89" height="40" alt="company logo" src="/img/logos/proof/company3.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet column middle aligned">
+                                <div>
+                                    <img height="40" alt="company logo" src="/img/logos/proof/company4.jpeg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet column middle aligned">
+                                <div>
+                                    <img height="40" alt="company logo" src="/img/logos/proof/company6.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <link rel="stylesheet" href="/css/home/principles.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+            <div id="principles" class="ui vertical basic middle aligned segment">
+                <div class="ui basic unpadded segment">
+                    <div id="principle-container" class="ui fluid container">
+                        <div class="ui container">
+                            <div class="ui stackable grid">
+                                <div class="row">
+                                    <div class="ui basic segment">
+                                        <div class="ui header principle-description faux-h3"><i>Effective Collaboration</i></div>
+                                        <h4 class="ui main header">Make sure everyone is <span class="emphasis-text">on the same page</span>
+                                        </h4>
+                                        <p class="principle-detail">
+                                            Organize your entire project under one roof. Code, data, models, pipelines, experiments, annotations. The things every machine learning professional needs.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="two column row">
+                                    <div class="column">
+                                        <div class="ui basic segment">
+                                            <img alt="comment on anything" src="/img/principles/discussions.png" srcset="/img/principles/discussions.png 2512w,
+                             /img/principles/1000/discussions.png 1000w,
+                             /img/principles/768/discussions.png 768w,
+                             /img/principles/640/discussions.png 640w,
+                             /img/principles/320/discussions.png 320w" sizes="(max-width: 499px) 640px, (max-width: 767px) 768px, 1000px" />
+                                            <h5 class="ui header">Comment on anything</h5>
+                                            <p class="principle-detail sub-segment">
+                                                Take notes on the best model architecture, discuss your annotations, or review a team member’s contribution. Build a knowledge base for your future self and your team.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="ui basic segment">
+                                            <img alt="Share with your team, or with the community" src="/img/principles/share.png" srcset="/img/principles/share.png 2512w,
+                   /img/principles/1000/share.png 1000w,
+                   /img/principles/768/share.png 768w,
+                   /img/principles/640/share.png 640w,
+                   /img/principles/320/share.png 320w" sizes="(max-width: 499px) 640px, (max-width: 767px) 768px, 1000px" />
+                                            <h5 class="ui header">Share with your team, or with the community</h5>
+                                            <p class="principle-detail sub-segment">
+                                                No need to send screenshots or email files. With DagsHub, you can send a link to anyone. With our organizations, teams and project permissions, you have control on who can view or edit anything.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="two column row">
+                                    <div class="column">
+                                        <div class="ui basic segment">
+                                            <img alt="reproducibility made possible" src="/img/principles/manage_chaos.png" srcset="/img/principles/manage_chaos.png 2512w,
+                             /img/principles/1000/manage_chaos.png 1000w,
+                             /img/principles/768/manage_chaos.png 768w,
+                             /img/principles/640/manage_chaos.png 640w,
+                             /img/principles/320/manage_chaos.png 320w" sizes="(max-width: 499px) 640px, (max-width: 767px) 768px, 1000px" />
+                                            <h5 class="ui header">Reproducibility made possible</h5>
+                                            <p class="principle-detail sub-segment">
+                                                Version everything. Explore relationships between data versions, experiments, and get a graph of your project history. When you find a result you want to reproduce, you can fetch all the code, artifacts and configuration with one command.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="ui basic segment">
+                                            <img alt="make sense of your project" src="/img/principles/decisions.png" srcset="/img/principles/decisions.png 2512w,
+                             /img/principles/1000/decisions.png 1000w,
+                             /img/principles/768/decisions.png 768w,
+                             /img/principles/640/decisions.png 640w,
+                             /img/principles/320/decisions.png 320w" sizes="(max-width: 499px) 640px, (max-width: 767px) 768px, 1000px" />
+                                            <h5 class="ui header">Compare and Diff any experiment and file</h5>
+                                            <p class="principle-detail sub-segment">
+                                                DagsHub lets you compare and diff all the things data scientists use. Diff Jupyter notebooks, compare table versions, annotations, metadata, even MRI images. All you need to do is push your data to DagsHub Storage.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="principle-container" class="ui fluid container middle-segment">
+                        <div class="ui container">
+                            <div class="ui stackable grid">
+                                <div class="seven wide column">
+                                    <div class="ui basic segment">
+                                        <div class="ui header principle-description faux-h3"><i>Integrated Stack</i></div>
+                                        <h4 class="ui main header"><span class="emphasis-text">Close the data loop</span> faster than ever
+                                        </h4>
+                                        <p class="principle-detail">
+                                            DagsHub isn't just a set of tools, it's a workflow that adds structure to your project and connects the different pieces in a way that makes sense.
+                                        </p>
+                                        <p class="principle-detail">
+                                            We don't just integrate. We make the set of tools you use better than the sum of each individual part.
+                                        </p>
+                                        <a class="principle-link" href="/docs/integration-guide/integration-guide/">Learn more about
+                      integrations <i class="chevron right icon"></i></a>
+                                    </div>
+                                </div>
+                                <div class="nine wide column">
+                                    <div class="ui basic segment">
+                                        <img alt="instant reproducibility" src="/img/principles/reproducibility.png" srcset="/img/principles/reproducibility.png 2512w,
+                   /img/principles/1000/reproducibility.png 1000w,
+                   /img/principles/768/reproducibility.png 768w,
+                   /img/principles/640/reproducibility.png 640w,
+                   /img/principles/320/reproducibility.png 320w" sizes="(max-width: 499px) 640px, (max-width: 767px) 768px, 1000px">
+                                        <h5 class="ui header">Go from experiment to source with a single click</h5>
+                                        <p class="principle-detail sub-segment">
+                                            Dive into the details of an experiment and see the versions of code, data and configuration that led to the results your care about.
+                                        </p>
+                                    </div>
+                                    <div class="ui basic segment">
+                                        <img alt="instant reproducibility" src="/img/principles/labeling.png" srcset="/img/principles/labeling.png 2512w,
+                   /img/principles/1000/labeling.png 1000w,
+                   /img/principles/768/labeling.png 768w,
+                   /img/principles/640/labeling.png 640w,
+                   /img/principles/320/labeling.png 320w" sizes="(max-width: 499px) 640px, (max-width: 767px) 768px, 1000px">
+                                        <h5 class="ui header">Manage the labeling process easily, no DevOps required</h5>
+                                        <p class="principle-detail sub-segment">
+                                            DagsHub Annotations lets you create a Label Studio instance with a single click, automatically synced with the datasets tracked on DagsHub Storage. Version the state of your annotations using Git with the Commit button.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="principle-container" class="ui fluid container">
+                        <div class="ui container">
+                            <div class="ui stackable grid">
+                                <div class="row">
+                                    <div class="ui basic segment">
+                                        <div class="ui header principle-description faux-h3"><i>Viva La Open Source!</i></div>
+                                        <h4 class="ui main header">Work with the <span class="emphasis-text">best tools</span> in the ecosystem
+                                        </h4>
+                                        <p class="principle-detail">
+                                            DagsHub provides integrated, hosted tools for all your MLOps needs. Leverage the most popular open source tools and formats to version datasets & models with DVC, track experiments with MLflow, label data with Label Studio, and automate anything with
+                                            Jenkins.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="two column row">
+                                    <div class="column">
+                                        <div class="ui basic segment">
+                                            <img alt="comment on anything" src="/img/principles/integrations.png" srcset="/img/principles/integrations.png 2512w,
+                             /img/principles/1000/integrations.png 1000w,
+                             /img/principles/768/integrations.png 768w,
+                             /img/principles/640/integrations.png 640w,
+                             /img/principles/320/integrations.png 320w" sizes="(max-width: 499px) 640px, (max-width: 767px) 768px, 1000px" />
+                                            <h5 class="ui header">Use battle-tested, open tools</h5>
+                                            <p class="principle-detail sub-segment">
+                                                DagsHub integrates standard, popular, open source tools with open APIs, so you don't need to slow down to customize and making lock-in non-existent. Tools that are commonly used by tens of thousands of data science and machine learning professionals worldwide.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="ui basic segment">
+                                            <img alt="Share with your team, or with the community" src="/img/principles/integrated-stack.png" srcset="/img/principles/integrated-stack.png 2512w,
+                   /img/principles/1000/integrated-stack.png 1000w,
+                   /img/principles/768/integrated-stack.png 768w,
+                   /img/principles/640/integrated-stack.png 640w,
+                   /img/principles/320/integrated-stack.png 320w" sizes="(max-width: 499px) 640px, (max-width: 767px) 768px, 1000px" />
+                                            <h5 class="ui header">You are in command</h5>
+                                            <p class="principle-detail sub-segment">
+                                                Don’t give up control of your critical assets and tech stack. DagsHub is fully modular, making it easy to mix and match the tools you need.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui center aligned container">
+                        <h3 class="ui header main">Create a single <span class="emphasis-text">source of truth</span> for your project
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <link rel="stylesheet" href="/css/home/how_it_works.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+            <div id="how-it-works-segment" class="ui very padded vertical basic inverted middle aligned segment">
+                <div class="ui container">
+                    <div class="ui center inverted aligned header main">How does it work?</div>
+                    <div id="questions" class="ui three column stackable padded very relaxed grid">
+                        <div class="ui column transition-up">
+                            <img class="step-img" src="/img/how_it_works/sign_up.svg" alt="sign up" />
+                            <div class="step-content">
+                                <div class="ui inverted header faux-h2"><i><span class="number symbol">1</span>Sign Up</i></div>
+                                <p class="large text">
+                                    Start by forking or pushing an existing project, or start a new one from a template
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ui column transition-up">
+                            <img class="step-img" src="/img/how_it_works/consolidate.svg" alt="connect the puzzle pieces" />
+                            <div class="step-content">
+                                <div class="ui inverted header faux-h2"><i><span class="number symbol">2</span>Consolidate</i></div>
+                                <p class="large text">
+                                    Models, data, code, experiments & more are automatically combined into a single interface
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ui column transition-up">
+                            <img class="step-img" src="/img/how_it_works/community.svg" alt="connect with the community" />
+                            <div class="step-content">
+                                <div class="ui inverted header faux-h2"><i><span class="number symbol">3</span>Collaborate</i></div>
+                                <p class="large text">
+                                    Add collaborators or contribute back to open source data science projects
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="ui right floated" href="/docs/faq">Read more FAQs <i class="chevron right icon"></i></a>
+                </div>
+            </div>
+            <script>
+                $(document).ready(() => {
+                    $('#how-it-works-segment .transition-up').each((index, el) => {
+                        $(el).visibility({
+                            onTopVisible: function() {
+                                $(this).transition({
+                                    animation: 'fade up',
+                                    duration: (index + 1) + 's',
+                                    queue: true,
+                                });
+                            },
+                        });
+                    });
+                });
+            </script>
+
+            <link rel="stylesheet" href="/css/home/supported_tools.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+            <div id="supported-tools-segment" class="ui very padded vertical basic middle aligned segment">
+                <div class="ui center aligned container">
+                    <h2 class="ui main header">Supports data science tools & frameworks you already use</h2>
+                    <h2 class="ui header subtitle">DAGsHub uses open source protocols, so it's fully portable and extensible</h2>
+                    <div class="ui center aligned relaxed equal width grid">
+                        <div class="row transition-up">
+                            <div class="two wide computer five wide tablet column middle aligned">
+                                <div data-tooltip="PyTorch" class="home-page-tooltip">
+                                    <img width="100" height="36" alt="PyTorch logo" src="/img/logos/pytorch.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer five wide tablet column middle aligned">
+                                <div data-tooltip="Tensorflow" class="home-page-tooltip">
+                                    <img width="32" height="36" alt="Tensorflow logo" src="/img/logos/tensorflow.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer five wide tablet column middle aligned">
+                                <div data-tooltip="Scikit Learn" class="home-page-tooltip">
+                                    <img width="67" height="36" alt="Scikit Learn logo" src="/img/logos/sklearn.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer five wide tablet column middle aligned">
+                                <div data-tooltip="GitHub" class="home-page-tooltip">
+                                    <img width="40" height="40" alt="GitHub logo" src="/img/logos/github.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer five wide tablet column middle aligned">
+                                <div data-tooltip="Google Colab" class="home-page-tooltip">
+                                    <img width="89" height="36" alt="Colab logo" src="/img/logos/colab.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer five wide tablet column middle aligned">
+                                <div data-tooltip="Kaggle" class="home-page-tooltip">
+                                    <img width="89" height="36" alt="Kaggle logo" src="/img/logos/kaggle.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row transition-up">
+                            <div class="two wide computer five wide tablet column middle aligned">
+                                <div data-tooltip="Pandas" class="home-page-tooltip">
+                                    <img width="89" height="36" alt="pandas logo" src="/img/logos/pandas.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer five wide tablet column middle aligned">
+                                <div data-tooltip="XGBoost" class="home-page-tooltip">
+                                    <img width="90" height="36" alt="XGBoost logo" src="/img/logos/xgboost.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer five wide tablet column middle aligned">
+                                <div data-tooltip="Fast.ai" class="home-page-tooltip">
+                                    <img width="64" height="64" alt="Fast.ai logo" src="/img/logos/fastai.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet five wide mobile column middle aligned">
+                                <div data-tooltip="HuggingFace" class="home-page-tooltip">
+                                    <img width="39" height="36" alt="HuggingFace logo" src="/img/logos/huggingface.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet five wide mobile column middle aligned">
+                                <div data-tooltip="Keras" class="home-page-tooltip">
+                                    <img width="36" height="36" alt="Keras logo" src="/img/logos/keras.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet five wide mobile column middle aligned">
+                                <div data-tooltip="PyTorch Lightning" class="home-page-tooltip">
+                                    <img width="40" height="40" alt="PyTorch Lightning logo" src="/img/logos/lightning.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet tablet only column middle aligned">
+                                <div data-tooltip="PyTorch Ignite" class="home-page-tooltip">
+                                    <img width="100" height="50" alt="PyTorch Ignite logo" src="/img/logos/ignite.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row transition-up">
+                            <div class="two wide computer four wide tablet five wide mobile column middle aligned">
+                                <div data-tooltip="Python" class="home-page-tooltip">
+                                    <img width="55" height="55" alt="Python logo" src="/img/logos/python.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet tablet only column middle aligned">
+                                <div data-tooltip="R" class="home-page-tooltip">
+                                    <img width="58" height="45" alt="R logo" src="/img/logos/r.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet five wide mobile column middle aligned">
+                                <div data-tooltip="Jupyter" class="home-page-tooltip">
+                                    <img width="52" height="60" alt="Jupyter logo" src="/img/logos/jupyter.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet tablet only column middle aligned">
+                                <div data-tooltip="Kubernetes" class="home-page-tooltip">
+                                    <img width="37" height="36" alt="Kubernetes logo" src="/img/logos/kubernetes.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet five wide mobile column middle aligned">
+                                <div data-tooltip="Kubeflow" class="home-page-tooltip">
+                                    <img width="60" height="60" alt="Kubeflow logo" src="/img/logos/kubeflow.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet five wide mobile column middle aligned">
+                                <div data-tooltip="Amazon Web Services" class="home-page-tooltip">
+                                    <img width="60" height="36" alt="Amazon Web Services logo" src="/img/logos/aws.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet five wide mobile column middle aligned">
+                                <div data-tooltip="Google Cloud" class="home-page-tooltip">
+                                    <img width="45" height="36" alt="Google Cloud logo" src="/img/logos/gcp.svg">
+                                </div>
+                            </div>
+                            <div class="two wide computer four wide tablet five wide mobile column middle aligned">
+                                <div data-tooltip="Azure" class="home-page-tooltip">
+                                    <img width="100" height="36" alt="Azure logo" src="/img/logos/azure.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one column row transition-up">
+                            <div class="column middle aligned">
+                                <span id="any-other-tool" class="ui header"><i>Or any other tool you like...</i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(() => {
+                    $('#supported-tools-segment .row.transition-up').each((index, el) => {
+                        $(el).visibility({
+                            onTopVisible: function() {
+                                $(this).transition({
+                                    animation: 'fade up',
+                                    duration: (index * 0.3 + 1) + 's',
+                                    queue: true,
+                                });
+                            },
+                        });
+                    });
+                });
+            </script>
+
+            <link rel="stylesheet" href="/css/home/whos_it_for.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+            <div id="whos-it-for" class="ui container">
+                <div class="ui very padded inverted segment">
+                    <div class="ui stackable middle aligned grid">
+                        <div class="two column header very relaxed row">
+                            <div class="twelve wide column">
+                                <div class="ui main inverted header">Who's it for?</div>
+                                <div class="ui inverted header subtitle faux-h2">DAGsHub is empowering open source in the data science world
+                                </div>
+                            </div>
+                        </div>
+                        <div class="two column very relaxed row">
+                            <div class="sixteen wide tablet eleven wide computer column">
+                                <div class="ui stackable aligned grid">
+                                    <div class="equal width two column row">
+                                        <div class="column transition-up">
+                                            <span class="number symbol inverted">1</span>
+                                            <p class="ui inverted large text">You're <span class="boldest">collaborating</span> with a large or growing team of data scientists</p>
+                                        </div>
+                                        <div class="column transition-up">
+                                            <span class="number symbol inverted">2</span>
+                                            <p class="ui inverted large text">You want to work with the best of breed <span class="boldest">open source</span> tools
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="equal width two column row">
+                                        <div class="column transition-up">
+                                            <span class="number symbol inverted">3</span>
+                                            <p class="ui inverted large text">You need automation for <span class="boldest">data
+                          versioning</span> or rapid <span class="boldest">iteration</span></p>
+                                        </div>
+                                        <div class="column transition-up">
+                                            <span class="number symbol inverted">4</span>
+                                            <p class="ui inverted large text">You're working with <span class="boldest">large or changing
+                          data</span> for your project
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="equal width two column row">
+                                        <div class="column transition-up">
+                                            <span class="number symbol inverted">5</span>
+                                            <p class="ui inverted large text"><span class="boldest">Git</span> is your go to tool for versioning
+                                            </p>
+                                        </div>
+                                        <div class="column transition-up">
+                                            <span class="number symbol inverted">6</span>
+                                            <p class="ui inverted large text"><span class="boldest">You’re a contributor</span> and believe in the power of teams
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide computer only column">
+                                <img src="/img/whos_it_for/dog_who.svg" alt="Who is DAGsHub for?" />
+                            </div>
+                        </div>
+                        <div class="equal width one column very relaxed row">
+                            <div class="column">
+                                <a class="ui compact big green button" href="/user/sign_up">
+                  Create a Free Account
+                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(document).ready(() => {
+                    $('#whos-it-for .transition-up').each((index, el) => {
+                        $(el).visibility({
+                            onTopVisible: function() {
+                                $(this).transition({
+                                    animation: 'fade up',
+                                    duration: (index * 0.5 + 1) + 's',
+                                    queue: true,
+                                });
+                            },
+                        });
+                    });
+                });
+            </script>
+
+            <link rel="stylesheet" href="/css/home/blog_updates.css?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42">
+            <div id="blog-updates" class="ui very padded vertical basic middle aligned segment">
+
+                <div class="ui container">
+                    <div class="ui center aligned inverted main header"><a href="/blog">Fresh, from our blog</a></div>
+
+                    <div class="ui three equal width column stackable grid">
+
+                        <div class="column">
+                            <a aria-label="Github Copilot Wants to Play Chess Instead of Code" href="https://dagshub.com/blog/github-copilot-not-code/">
+                                <div class="ui fluid link raised transition-up card">
+                                    <div class="image">
+                                        <img width="357" height="250" src="https://dagshub.com/blog/content/images/size/w600/2022/01/git_copilot._01png.png">
+                                    </div>
+                                    <div class="main content">
+                                        <p class="header">Github Copilot Wants to Play Chess Instead of Code</p>
+                                        <div class="meta">
+                                            <span>Ido Nov</span>
+                                        </div>
+                                        <div class="description">
+                                            <p>When OpenAI announced GPT-3 &amp; its public beta I was fascinated but didn’t have an API key. I played with everything free that was built with GPT-3. Naturally, when I heard about GitHub Copilot I signed up
+                                                for the waitlist and a few months later, I got access!</p>
+                                        </div>
+                                    </div>
+                                    <div class="center aligned extra content">
+                                        View post <i class="icon chevron right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="column">
+                            <a aria-label="Closing the data loop with DagsHub Annotations and Label Studio" href="https://dagshub.com/blog/closing-the-data-loop-with-dagshub-annotations-and-label-studio/">
+                                <div class="ui fluid link raised transition-up card">
+                                    <div class="image">
+                                        <img width="357" height="250" src="https://dagshub.com/blog/content/images/size/w600/2022/01/dags_loves_label_studio.png">
+                                    </div>
+                                    <div class="main content">
+                                        <p class="header">Closing the data loop with DagsHub Annotations and Label Studio</p>
+                                        <div class="meta">
+                                            <span>Nir Barazida</span>
+                                        </div>
+                                        <div class="description">
+                                            <p>DagsHub recently announced an integration with Label Studio. In this blog I&#39;ll show you how to do Git Flow for the data labeling process, and walk you through a 7-step get started tutorial for using Label
+                                                Studio and DagsHub Annotations.</p>
+                                        </div>
+                                    </div>
+                                    <div class="center aligned extra content">
+                                        View post <i class="icon chevron right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="column">
+                            <a aria-label="Launching DagsHub 2.0" href="https://dagshub.com/blog/launching-dagshub-2-0/">
+                                <div class="ui fluid link raised transition-up card">
+                                    <div class="image">
+                                        <img width="357" height="250" src="https://dagshub.com/blog/content/images/size/w600/2022/01/dagshub-2.0-wide-02-01.png">
+                                    </div>
+                                    <div class="main content">
+                                        <p class="header">Launching DagsHub 2.0</p>
+                                        <div class="meta">
+                                            <span>Dean Pleban</span>
+                                        </div>
+                                        <div class="description">
+                                            <p>This is an exciting day for us at DagsHub. We’re updating DagsHub with amazing new capabilities, enabling you to close the data loop efficiently, zero DevOps required, as well as upgrading the data teamwork
+                                                experience!
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="center aligned extra content">
+                                        View post <i class="icon chevron right"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <script>
+                $(document).ready(() => {
+                    $('#blog-updates .transition-up').each((index, el) => {
+                        $(el).visibility({
+                            onTopVisible: function() {
+                                $(this).transition({
+                                    animation: 'fade up',
+                                    duration: (index + 1) + 's',
+                                    queue: true,
+                                });
+                            },
+                        });
+                    });
+                });
+            </script>
+
+        </div>
+        <script>
+            $('.underline-animation').visibility({
+                onBottomVisible: function() {
+                    $(this).addClass('visible');
+                },
+            });
+        </script>
+
+
+    </div>
+    <footer>
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height grid">
+                    <div id="footer-logo-social" class="four wide column">
+                        <a href="">
+                            <img alt="footer DAGsHub logo" id="footer-logo" class="ui centered image" src="/img/footerlogo.svg">
+                        </a>
+                        <div id="footer-social" class="ui center aligned row">
+                            <a aria-label="follow us on Twitter" class="ui basic inverted circular twitter icon button" href="https://twitter.com/TheRealDAGsHub">
+                                <i class="twitter large icon"></i>
+                            </a>
+                            <a aria-label="follow us on YouTube" class="ui basic inverted circular youtube icon button" href="https://youtube.com/c/dagshub">
+                                <i class="youtube large icon"></i>
+                            </a>
+                            <a aria-label="follow us on LinkedIn" class="ui basic inverted circular linkedin icon button" href="https://www.linkedin.com/company/dagshub">
+                                <i class="linkedin large icon"></i>
+                            </a>
+                            <a aria-label="join our Discord" class="ui basic inverted circular discord icon button" href="https://discord.com/invite/9gU36Y6">
+                                <i class="discord large icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="two wide column">
+                        <div class="ui link inverted list relaxed">
+                            <a class="item" rel="noopener noreferrer" href="">Home</a>
+                            <a class="item" rel="noopener noreferrer" href="/explore/repos">Explore</a>
+                            <a class="item" rel="noopener noreferrer" href="/docs">Docs</a>
+                            <a class="item" rel="noopener noreferrer" href="/docs/faq">FAQ</a>
+                        </div>
+                    </div>
+                    <div class="two wide column">
+                        <div class="ui link inverted list relaxed">
+                            <a class="item" rel="noopener noreferrer" href="/blog">Blog</a>
+                            <a class="item" rel="noopener noreferrer" href="/about">Our Story</a>
+                            <a class="item" rel="noopener noreferrer" href="/careers">Careers</a>
+
+                            <a id="merch-store" class="item" rel="noopener noreferrer" href="https://teespring.com/stores/dagshub">Merch</a>
+                        </div>
+                    </div>
+                    <div class="two wide column">
+                        <div class="ui link inverted list relaxed">
+                            <a class="item" id="contact-us-footer" href="javascript:">Contact Us</a>
+                            <script>
+                                (function() {
+                                    const $contactModal = $('#contact-modal');
+                                    const $contactForm = $contactModal.find('#contact-form');
+                                    $contactModal.modal('attach events', '#contact-us-footer', 'show');
+                                    $('#contact-us-footer').on('click', () => {
+                                        $contactForm.attr('action', 'contact_form');
+                                    });
+                                })();
+                            </script>
+                            <a class="item" rel="noopener noreferrer" href="/plans">Plans</a>
+                            <a class="item" rel="noopener noreferrer" href="/terms">Terms</a>
+                            <a class="item" rel="noopener noreferrer" href="/privacy">Privacy</a>
+                        </div>
+                    </div>
+                    <div class="six wide column">
+                        <p><b>© 2022 DAGsHub</b></p>
+                        <p>We are completely free for open source projects. </br> You can start now!</p>
+
+                        <a class="ui green button" href="/user/sign_up"><i class="sign-up-icon fas fa-user-plus"></i>
+              Sign Up</a>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/libs/emojify-1.1.0.min.js"></script>
+<script src="/js/libs/clipboard-1.5.9.min.js"></script>
+
+
+
+<script src="/js/gogs.js?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42"></script>
+<script src="/js/dagshub.js?v=f8f2160d3da868a9b90647706c3ceb1ba0ff2d42"></script>
+
+
+
+
+
+
+
+
+
+</html>
