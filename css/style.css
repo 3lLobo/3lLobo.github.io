@@ -8,6 +8,70 @@ Licence under Creative Commons Attribution 3.0
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
+/* 
+FLUID CSS */
+.padded-masthead {
+    padding: 10em 0;
+}
+
+.above-the-fold {
+    padding-top: 30px;
+    background: none;
+    /* fallback for old browsers */
+    padding-bottom: 250px;
+    position: relative;
+    clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 5vh), 0 100%);
+    -webkit-clip-path: polygon( 0 0, 100% 0, 100% calc(100% - 5vh), 0 100%);
+    z-index: 4;
+}
+
+.background-effect-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-effect-container #animation_bg {
+    width: 100%;
+    height: 100%;
+}
+
+#homepagehero_container {
+    pointer-events: none;
+}
+
+.homepagehero_content p {
+    color: #f5fffa !important;
+    font-size: 1.5rem !important;
+    line-height: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.homepagehero_content p.subtitle-2 {
+    font-size: 1.1rem !important;
+}
+
+.homepagehero_content h1.ui.header {
+    font-size: 4.2rem !important;
+    margin-bottom: 30px;
+    text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.4);
+    color: #f2fff9;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-family: "Inter", sans-serif !important;
+}
+
+.home_search .ui.input input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* 
+END FLUID CSS */
+
 /* Reset
 ---------------------------------*/
 ul {
@@ -270,7 +334,7 @@ figure.effect-oscar:hover img {
 /* Styles
 ---------------------------------*/
 body {
-    background: #3f4b5d;
+    background: #05050500;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -402,7 +466,7 @@ p {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #3f4b5d;
+    color: #05050500;
     background-color: transparent;
 }
 
@@ -687,7 +751,7 @@ color:#fff;
 
 
 #work_outer {
-    background: #3f4b5d;
+    background: #05050500;
     /* background: #f9f9f9; */
     padding: 70px 0px;
     position: relative;
@@ -778,7 +842,7 @@ a.contact_btn:hover {
 
 #Portfolio {
     padding: 60px 0px;
-    background: #3f4b5d;
+    background: #05050500;
 }
 
 .Portfolio-nav {
@@ -875,7 +939,7 @@ img {
 
 #clients {
     padding: 60px 0px;
-    background: #3f4b5d;
+    background: #05050500;
 }
 
 .client_area {
@@ -964,7 +1028,7 @@ img {
 --------------------------- */
  
 .aboutUs-container {
-background: #3f4b5d;
+background: #05050500;
 background-repeat: no-repeat;
 background-position: right;
 background-size: auto 100%;
@@ -975,7 +1039,7 @@ background-position-y: 70px;
 }
 #about-us .read-more{
 	border: 1px solid #ED5441;
-	color: #1a1a1a;
+	color: #b6b6b6;
 }
 
 #about-us .read-more:hover{
@@ -984,7 +1048,7 @@ background-position-y: 70px;
 	color: #fff;
 }
 .about-us-post-container{
-    background: #3f4b5d;
+    background: #05050500;
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: auto 100%;
@@ -993,6 +1057,7 @@ background-position-y: 70px;
 }
 .about-us h3{
 	font-size:28px;
+    color: #9b9b9b;
 }
 .points{ 
 	margin-bottom: 10px;
@@ -1003,13 +1068,14 @@ background-position-y: 70px;
 	/*font-size: 0.9375em;*/
 	line-height: 1.625em;
 	padding: 15px 0;
+    color: #9b9b9b;
 }
 .about-us .about-us-list{
 	list-style: none;
 	margin-bottom: 20px;
 	padding-left:0px;
 	padding: 25px 25px 15px;
-	background-color: #3f4b5d;
+	background-color: #05050500;
 
 }
 
@@ -1017,7 +1083,7 @@ background-position-y: 70px;
 	position: relative;
 	list-style-type: none;
 	padding: 5px 0 5px 30px;
-	color: #010100;
+	color: #9b9b9b;
 }
 
 .about-us .points:before{
@@ -1178,7 +1244,7 @@ transition: all .3s;
 }
 #aboutUs {
     padding: 60px 0;
-    background: #3f4b5d;
+    background: #05050500;
 }
 
 /* Contact
@@ -1370,7 +1436,7 @@ transition: all .3s;
     width: 175px;
     height: 50px;
     letter-spacing: 0px;
-    background: #3f4b5d;
+    background: #05050500;
     border-radius: 3px;
     color: #00e3eb;
     font-size: 16px;
@@ -2488,7 +2554,7 @@ display:none;
 }
 }
 section#experience {
-    background: #3f4b5d;
+    background: #05050500;
     margin-bottom: 60px;
 }
 /*-------------------------------*/

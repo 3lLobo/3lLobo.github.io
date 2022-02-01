@@ -60,12 +60,6 @@
 
 <body>
 
-  <!-- FLUID DIV START -->
-  <div class="background-effect-container">
-    <canvas id="animation_bg"></canvas>
-  </div>
-  <script type="text/javascript" src="js/script.js"></script>
-  <!-- FLUID DIV END -->
 
   <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -102,6 +96,7 @@
   <!--Header_section-->
   <header id="header_wrapper">
     <div class="container">
+      <!-- <canvas id="animation_bg"></canvas> -->
       <div class="header_box">
         <!--<div class="logo"><a href="#">Resume</a></div>-->
         <nav class="navbar navbar-inverse" role="navigation">
@@ -116,7 +111,8 @@
               <li><a href="#aboutUs" class="scroll-link">Florian Wolf</a></li>
               <li><a href="#service" class="scroll-link">Publications</a></li>
               <li><a href="#Portfolio" class="scroll-link">Projects</a></li>
-              <li><a href="./res/cv_florian_wolf_20220106.pdf" download="cv_wolf" class="input-btn">Download CV</a></li>
+              <li><a href="./res/cv_florian_wolf_20220106.pdf" download="cv_wolf" class="input-btn">Download CV</a>
+              </li>
               <!-- <li><a href="#experience" class="scroll-link">Curriculum Vitae</a></li>  -->
               <li><a href="#contact" class="scroll-link">Contact</a></li>
             </ul>
@@ -130,7 +126,15 @@
   <section id="aboutUs">
     <!--Aboutus-->
     <div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
+
       <div class="container">
+        <!-- FLUID DIV START -->
+        <div class="background-effect-container">
+          <canvas id="animation_bg"></canvas>
+        </div>
+
+        <!-- <script type="text/javascript" src="js/script.js"></script> -->
+        <!-- FLUID DIV END -->
         <h2>About Wolf</h2>
         <h6>A wolf who loves AI & it's creations</h6>
         <div class="inner_section">
@@ -233,6 +237,7 @@
     <!-- Container -->
 
     <div class="portfolio-top"></div>
+
 
     <!-- Portfolio Filters -->
     <div class="portfolio">
@@ -539,7 +544,7 @@
   <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/wow.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
-
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
